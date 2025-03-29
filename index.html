@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruity Fusion - Anime Blend</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Light Alice Blue */
+            color: #333;
+        }
+        header {
+            background-color: #ffdab9; /* Peach Puff */
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #ffa07a; /* Light Salmon */
+        }
+        header h1 {
+            margin: 0;
+            color: #d2691e; /* Chocolate */
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 40px 0;
+        }
+        .hero img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .hero h2 {
+            color: #ff6347; /* Tomato */
+            font-size: 2em;
+        }
+        .hero p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            gap: 20px;
+        }
+        .feature-item {
+            background-color: #fff;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: calc(33% - 40px); /* Adjust width based on gap */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .feature-item:hover {
+            transform: translateY(-5px);
+        }
+        .feature-item img {
+            max-width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .feature-item h3 {
+            color: #4682b4; /* Steel Blue */
+            margin-top: 0;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            background-color: #98fb98; /* Pale Green */
+            border-radius: 10px;
+        }
+        .cta h2 {
+            color: #2e8b57; /* Sea Green */
+        }
+        .cta button {
+            background-color: #ff6347; /* Tomato */
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .cta button:hover {
+            background-color: #e5533d; /* Darker Tomato */
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 15px;
+            background-color: #eee;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature-item {
+                width: 80%;
+            }
+        }
+         @media (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .hero h2 {
+                font-size: 1.5em;
+            }
+            .feature-item {
+                width: 90%;
+            }
+             .cta button {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Fruity Fusion</h1>
+        <p>Your Daily Dose of Anime-zing Flavor!</p>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h2>Taste the Magic!</h2>
+            <img src="images/ghibi_1.jpeg" alt="Refreshing Fruit Juice Blend - Anime Style">
+            <p>Experience a vibrant blend of exotic fruits, crafted with passion and inspired by the enchanting world of anime. Refreshing, delicious, and packed with goodness!</p>
+        </section>
+
+        <section class="features">
+            <div class="feature-item">
+                <img src="images/ghibi_2.jpeg" alt="Feature Image 1 - Anime Fruit Scene">
+                <h3>Pure & Natural</h3>
+                <p>Made with 100% natural fruit juices. No added sugars or artificial flavors.</p>
+            </div>
+            <div class="feature-item">
+                <img src="images/ghibi_3.jpeg" alt="Feature Image 2 - Anime Character Enjoying Juice">
+                <h3>Boost Your Day</h3>
+                <p>Packed with vitamins and antioxidants to energize your adventures.</p>
+            </div>
+            <div class="feature-item">
+                <!-- Placeholder for a third image or icon if needed -->
+                 <img src="images/ghibi_1.jpeg" alt="Feature Image 3 - Close up of juice bottle"> <!-- Reusing image 1 as placeholder -->
+                <h3>Irresistibly Tasty</h3>
+                <p>A unique flavor combination that will leave you wanting more.</p>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Ready to Try Fruity Fusion?</h2>
+            <p>Find us at your local stores or order online today!</p>
+            <button>Order Now</button>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Fruity Fusion Co. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
